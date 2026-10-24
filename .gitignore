@@ -1,0 +1,10 @@
+/.artifacts/
+/dist/
+/target/
+.env
+.env.*
+*.pem
+*.key
+*.rs
+Cargo.toml
+Cargo.lock
