@@ -8,17 +8,37 @@
 
 ## 版本与下载
 
-尚未发布正式版本。
+当前正式版本：**0.1.0** ([relayer-v0.1.0](https://github.com/TrustodyFinance/trustody-relayer/releases/tag/relayer-v0.1.0)).
 
 官方正式版程序通过 [Releases](https://github.com/TrustodyFinance/trustody-relayer/releases) 下载。本仓库仅分发正式版，不公开实现源码。GitHub 自动提供的 **Source code (zip)** 和 **Source code (tar.gz)** 包含本分发仓库的文档等公开文件，不包含 Relayer 实现源码。
 
-首个经过验证的正式版本发布后提供下载。
+| 平台 | 下载 |
+| --- | --- |
+| Linux x86_64 | [trustody-relayer-linux-x86_64](https://github.com/TrustodyFinance/trustody-relayer/releases/download/relayer-v0.1.0/trustody-relayer-linux-x86_64) |
+| Linux ARM64 | [trustody-relayer-linux-aarch64](https://github.com/TrustodyFinance/trustody-relayer/releases/download/relayer-v0.1.0/trustody-relayer-linux-aarch64) |
+| macOS Intel / Apple silicon | [trustody-relayer-macos-universal](https://github.com/TrustodyFinance/trustody-relayer/releases/download/relayer-v0.1.0/trustody-relayer-macos-universal) |
+| Windows x86_64 | [trustody-relayer-windows-x86_64.exe](https://github.com/TrustodyFinance/trustody-relayer/releases/download/relayer-v0.1.0/trustody-relayer-windows-x86_64.exe) |
+
 
 ## 安装与配置
 
 优先使用钱包 **设置 → 执行器 → 切换到自建执行器** 生成的固定版本安装命令。命令核对安装脚本指纹，安装程序再验证可执行文件。钱包编号、平台编号、EVM 网络与 TRON 配置均应采用当前钱包的实际值；给执行器添加网络配置，不会自动开启钱包的对应网络转出权限。
 
-正式版本发布后提供安装命令。
+Linux / macOS:
+
+```sh
+curl -fL 'https://github.com/TrustodyFinance/trustody-relayer/releases/download/relayer-v0.1.0/install.sh' -o install.sh
+actual=$( (sha256sum install.sh 2>/dev/null || shasum -a 256 install.sh) | cut -d' ' -f1)
+[ "$actual" = '7b8606c2c276bde8f7d47dcc708fb9c6a2dd886f5b21c099873f2e29b2ad7ef3' ] && sh install.sh
+```
+
+Windows (PowerShell):
+
+```powershell
+Invoke-WebRequest -UseBasicParsing 'https://github.com/TrustodyFinance/trustody-relayer/releases/download/relayer-v0.1.0/install.ps1' -OutFile install.ps1
+if ((Get-FileHash ./install.ps1 -Algorithm SHA256).Hash.ToLower() -ne '04d9f2e6f819d373b5a09110e6b5b3c1a3c8ddcb800997a05a68e65f924faab4') { throw 'checksum mismatch' }
+powershell -NoProfile -ExecutionPolicy Bypass -File ./install.ps1
+```
 
 安装向导创建配置和私密身份文件，并显示公开的执行器 ID。回到钱包登记此 ID，完成相应治理审批；提交请求不等于切换已经生效。不要把 PEM 身份文件内容粘贴到钱包，也不要将它放进日志或公开问题报告。
 
@@ -40,7 +60,9 @@ trustody-relayer run --config ./config.toml
 
 ## 容器与 Secret
 
-正式版本发布后提供签名镜像及其固定摘要。
+```text
+ghcr.io/trustodyfinance/trustody-relayer@sha256:887c7bbb07af0b05f8884006ed6ac9b34779811b0ff8217cd4b643b8ebae74ca
+```
 
 配置可来自私密文件或 `TRUSTODY_RELAYER_CONFIG_TOML`。当前身份在配置字段 `identity_pem` 与环境变量 `TRUSTODY_RELAYER_IDENTITY_PEM` 中**只能选一种**，同时提供会被拒绝。`next_identity_pem` 与 `TRUSTODY_RELAYER_NEXT_IDENTITY_PEM` 也遵循相同规则。本机文件路径不会自动出现在容器内。
 

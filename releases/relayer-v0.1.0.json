@@ -1,0 +1,88 @@
+{
+  "assets": {
+    "RELEASE_NOTES.md": {
+      "sha256": "e330eb6c59d27ff4e7ba33f0b90037d116ce80e0460b31b27faa174235c8342d",
+      "size": 3403
+    },
+    "SHA256SUMS": {
+      "sha256": "b8bf011b9774e43f3b28dc603b13947dbd71987b4af8966a203919f537fabd0a",
+      "size": 798
+    },
+    "SHA256SUMS.sigstore.json": {
+      "sha256": "44594538b55e1f31b85a9ef06c818f4ab277e1287d52098e16e27b692fc94a85",
+      "size": 10631
+    },
+    "executor-release.json": {
+      "sha256": "6709c0c840b3e7fb81c3a45c53b3852946fa8a571511c4cdaffe3e27d94eaa58",
+      "size": 1099
+    },
+    "executor-release.json.sigstore.json": {
+      "sha256": "8a106b15a67a361963b37f533cc82b3cc6bb87b108c7473c5c5715b41b6be5c5",
+      "size": 10731
+    },
+    "install.ps1": {
+      "sha256": "04d9f2e6f819d373b5a09110e6b5b3c1a3c8ddcb800997a05a68e65f924faab4",
+      "size": 6888
+    },
+    "install.ps1.sigstore.json": {
+      "sha256": "b6a36fd5667224ebbd079f14edeebd7311ada9813c01e44f8fb5f681205114f6",
+      "size": 10683
+    },
+    "install.sh": {
+      "sha256": "7b8606c2c276bde8f7d47dcc708fb9c6a2dd886f5b21c099873f2e29b2ad7ef3",
+      "size": 13091
+    },
+    "install.sh.sigstore.json": {
+      "sha256": "edf1ef8346a72d35efd2e18d609a80f6a75e140db56169e9ca2614bdb00441e6",
+      "size": 10635
+    },
+    "render.yaml": {
+      "sha256": "dfbf466a86b1bc7b5fa7bf851ecf1c3bfbe3a8e963b6ffb6f207943fe8ea0566",
+      "size": 1058
+    },
+    "render.yaml.sigstore.json": {
+      "sha256": "6bf62cbab854d9d1be782caa0c53051eeec12267e31ecf3066711f88e1e23830",
+      "size": 10631
+    },
+    "trustody-relayer-linux-aarch64": {
+      "sha256": "76e2ab729ea09e49abbc0c6cbf1419e7306fb4708ae1db09f0f365f93dae7012",
+      "size": 7954440
+    },
+    "trustody-relayer-linux-aarch64.sigstore.json": {
+      "sha256": "f08cb24eccfa984c2ff47c2fe28d162e9c25e5b4e53f0079522f00fb48faf62b",
+      "size": 10635
+    },
+    "trustody-relayer-linux-x86_64": {
+      "sha256": "920ce61de38b228475900a1804e7c0635ad1eb101c331b406b614d12ee5891f9",
+      "size": 7851912
+    },
+    "trustody-relayer-linux-x86_64.sigstore.json": {
+      "sha256": "21af555eebdb3082d1b7feaa9d7848a5f46ae5c7f735aa2ae18b530db23c7d95",
+      "size": 10931
+    },
+    "trustody-relayer-macos-universal": {
+      "sha256": "f7f4dbb6abe49b32526e4f4a270eec6551a007bf6cd0f4679c04a6f6ddcd9738",
+      "size": 13064672
+    },
+    "trustody-relayer-macos-universal.sigstore.json": {
+      "sha256": "22c64cf71af1eec7978ad9f81c169e8b2b972553541f56cd7c66d2ee0903cb12",
+      "size": 10695
+    },
+    "trustody-relayer-windows-x86_64.exe": {
+      "sha256": "663cde1e16895945ad6f78145e44cea05b74486590d34aac07b6d11eb5b8442c",
+      "size": 6265344
+    },
+    "trustody-relayer-windows-x86_64.exe.sigstore.json": {
+      "sha256": "9d071120d20cb46951f460c0eab4d3953275220cce054383e511ad4a590711a4",
+      "size": 10735
+    }
+  },
+  "image": "ghcr.io/trustodyfinance/trustody-relayer@sha256:887c7bbb07af0b05f8884006ed6ac9b34779811b0ff8217cd4b643b8ebae74ca",
+  "repository": "TrustodyFinance/trustody-relayer",
+  "run_id": "40104286639",
+  "schema": 1,
+  "source_commit": "1ca9ce0fb3ff57573c652b431bb19d593127ff39",
+  "tag": "relayer-v0.1.0",
+  "version": "0.1.0",
+  "workflow": "accord-vault/safe-custody/.github/workflows/executor-release.yml@refs/tags/relayer-v0.1.0"
+}
