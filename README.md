@@ -1,7 +1,5 @@
 # Trustody Relayer
 
-[简体中文](README.zh-CN.md)
-
 The official binary distribution repository for Trustody Relayer. It advances wallet requests that satisfy their approval and release conditions, submits transactions to supported networks, and helps track their results.
 
 The relayer's identity is an execution credential, **not an asset private key**. It cannot approve payments or change an approved recipient or amount. Self-hosting reduces dependence on the platform's relayer service; it does not remove the platform's authority to upgrade wallet programs.
@@ -18,7 +16,6 @@ Download official release binaries from [Releases](https://github.com/TrustodyFi
 | Linux ARM64 | [trustody-relayer-linux-aarch64](https://github.com/TrustodyFinance/trustody-relayer/releases/download/relayer-v0.1.0/trustody-relayer-linux-aarch64) |
 | macOS Intel / Apple silicon | [trustody-relayer-macos-universal](https://github.com/TrustodyFinance/trustody-relayer/releases/download/relayer-v0.1.0/trustody-relayer-macos-universal) |
 | Windows x86_64 | [trustody-relayer-windows-x86_64.exe](https://github.com/TrustodyFinance/trustody-relayer/releases/download/relayer-v0.1.0/trustody-relayer-windows-x86_64.exe) |
-
 
 ## Installation and setup
 
