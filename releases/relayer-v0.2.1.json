@@ -1,0 +1,56 @@
+{
+  "assets": {
+    "RELEASE_NOTES.md": {
+      "sha256": "5cdbdc82e27e0f948477c5a44b8a25da2b39a21f5cc9f09e48aaf48bde3f119e",
+      "size": 4217
+    },
+    "SHA256SUMS": {
+      "sha256": "36021831e25bcb2d641c3afc672753f636484b028b51b7fc1d66245b15f657ba",
+      "size": 797
+    },
+    "SHA256SUMS.sigstore.json": {
+      "sha256": "eda2f156710cbf350f0cbc1b76e03c64184cf22e137afab7df8df502408ec056",
+      "size": 10623
+    },
+    "install.ps1": {
+      "sha256": "b4365cc1c2645f806b55eb405b411075ebfae4ef926a9f6dfeaedd693ee21864",
+      "size": 8558
+    },
+    "install.sh": {
+      "sha256": "a60b9722db4c79c3f58b9b020a8ca9af1e3d9cce696e994638c18281e967cdc4",
+      "size": 16441
+    },
+    "relayer-release.json": {
+      "sha256": "a01944caf8a8e0fedefeb3dc99dc5243b429bb3cede3bd6293b34c971b7da647",
+      "size": 1098
+    },
+    "render.yaml": {
+      "sha256": "da02fb9c0f7ca332db5ccf5321a8ad69e2bbecbafa30e969d4bfcb9c24d03551",
+      "size": 1056
+    },
+    "trustody-relayer-linux-aarch64": {
+      "sha256": "a5d8d9ab7666fa457d64455ca2fb66a058aa9f46dab06ebeb1c2eefff3e41677",
+      "size": 8535032
+    },
+    "trustody-relayer-linux-x86_64": {
+      "sha256": "366bfa0f90c4d9888eee13a37ffa88b328cb3ecd4139b8a8744235671997e917",
+      "size": 8444744
+    },
+    "trustody-relayer-macos-universal": {
+      "sha256": "82ec2d1ab0c1a13dccd254069f67a8700f1c4cc88ed204fc6653ecbffa5717e5",
+      "size": 14105056
+    },
+    "trustody-relayer-windows-x86_64.exe": {
+      "sha256": "a3a6099dd9f53d7515879651b3ccf675f69dbd05e593e2a271eee82d55946e00",
+      "size": 6879744
+    }
+  },
+  "image": "ghcr.io/trustodyfinance/trustody-relayer@sha256:e52c12ede550dcab81e5066882eeda0a83f21fca7fcbba6a0a9460c0615ddbf6",
+  "repository": "TrustodyFinance/trustody-relayer",
+  "run_id": "40355325494",
+  "schema": 1,
+  "source_commit": "235088d46485f57b0de2e37c93613e75f1e00188",
+  "tag": "relayer-v0.2.1",
+  "version": "0.2.1",
+  "workflow": "accord-vault/safe-custody/.github/workflows/relayer-release.yml@refs/tags/relayer-v0.2.1"
+}
